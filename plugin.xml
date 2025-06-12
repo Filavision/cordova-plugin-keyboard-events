@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-keyboard-events" version="1.0.0">
+    <name>Keyboard Events Only</name>
+    <description>Minimal Cordova plugin for keyboardDidShow and keyboardDidHide</description>
+    <license>MIT</license>
+    <keywords>cordova,keyboard,events</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=10.0.0" />
+    </engines>
+
+    <platform name="android">
+        <js-module src="www/keyboard.js" name="KeyboardEvents">
+            <clobbers target="window.Keyboard" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="KeyboardEvents">
+                <param name="android-package" value="com.example.keyboard.KeyboardEvents" onload="true" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/KeyboardEvents.java" target-dir="src/com/example/keyboard" />
+    </platform>
+</plugin>
