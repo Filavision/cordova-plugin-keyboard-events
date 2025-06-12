@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-keyboard-events",
+  "version": "1.0.0",
+  "description": "Slim Cordova Keyboard Plugin that only fires keyboardDidShow and keyboardDidHide events for Android",
+  "cordova": {
+    "id": "cordova-plugin-keyboard-events",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "keyboard",
+    "android",
+    "plugin",
+    "keyboardDidShow",
+    "keyboardDidHide"
+  ],
+  "author": "Filavision",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Filavision/cordova-plugin-keyboard-events.git"
+  }
+}
